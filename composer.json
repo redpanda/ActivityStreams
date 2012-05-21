@@ -1,0 +1,15 @@
+{
+    "name": "redpanda/activitystreams",
+    "description": "Generate activity streams from the actions on your site.",
+    "autoload": {
+        "psr-0": {
+            "ActivityStreams": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Jimmy Leger",
+            "email": "jimmy.leger@gmail.com"
+        }
+    ]
+}
