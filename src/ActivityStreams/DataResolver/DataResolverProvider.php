@@ -1,19 +1,9 @@
 <?php
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
 namespace ActivityStreams\DataResolver;
 
 use ActivityStreams\Action\ActionInterface;
 
-/**
- * Description of DataResolverProvider
- *
- * @author jleger
- */
 class DataResolverProvider implements \IteratorAggregate, \Countable
 {
     protected $resolvers;
