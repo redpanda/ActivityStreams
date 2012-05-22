@@ -4,7 +4,7 @@ namespace ActivityStreams\DataResolver;
 
 use ActivityStreams\Action\ActionInterface;
 
-class DataResolverProvider implements \IteratorAggregate, \Countable
+class DataResolverProvider
 {
     protected $resolvers;
     
@@ -22,11 +22,6 @@ class DataResolverProvider implements \IteratorAggregate, \Countable
         $this->resolvers[$resolver->getType()] = $resolver;
     }
     
-    public function all()
-    {
-        return $this->resolvers;
-    }
-    
     public function has($type)
     {
         return isset($this->resolvers[$type]);
@@ -42,15 +37,5 @@ class DataResolverProvider implements \IteratorAggregate, \Countable
         $resolver->setObject($id);
 
         return $resolver;
-    }
-    
-    public function getIterator()
-    {
-        return new \ArrayObject($this->resolvers);
-    }
-    
-    public function count()
-    {
-        return count($this->resolvers);
     }
 }
