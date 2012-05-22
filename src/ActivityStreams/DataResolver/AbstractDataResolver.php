@@ -4,7 +4,7 @@ namespace ActivityStreams\DataResolver;
 
 abstract class AbstractDataResolver implements DataResolverInterface
 {
-    private $object;
+    protected $object;
 
     public function setObject($id)
     {
