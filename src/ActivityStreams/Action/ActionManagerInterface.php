@@ -7,6 +7,7 @@ use ActivityStreams\Action\ActionInterface;
 
 interface ActionManagerInterface
 {
+    function findAll();
     function createAction(StreamableInterface $actor, $verb, StreamableInterface $object = null, StreamableInterface $target = null);
     function updateAction(ActionInterface $action);
 }
