@@ -22,7 +22,6 @@ class RendererProvider implements RendererProviderInterface
     public function addRenderer(RendererInterface $renderer)
     {
         $this->renderers[$renderer->getType()] = $renderer;
-        $renderer->setProvider($this);
     }
 
     public function all()
