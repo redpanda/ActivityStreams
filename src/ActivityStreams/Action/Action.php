@@ -93,7 +93,7 @@ abstract class Action implements ActionInterface
     
     public function setObjectType($objectType)
     {
-        $this->obectType = $objectType;
+        $this->objectType = $objectType;
     }
     
     public function getObjectType()
